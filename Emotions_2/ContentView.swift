@@ -53,7 +53,10 @@ struct ContentView: View {
                         }.tag(4)
         }
     }
-//    var body: some View {
+    
+    //test
+
+    //    var body: some View {
 //        NavigationView {    // ナビゲーションバーを表示する為に必要
 //            List {
 //                ForEach(items) { item in
