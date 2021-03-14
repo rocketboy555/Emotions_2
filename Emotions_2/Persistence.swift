@@ -14,8 +14,10 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let newEmotion = EmotionEnt(context: viewContext)
+            newEmotion.timestamp = Date()
+            newEmotion.text = "init_text"
+            newEmotion.emotion = "init_emotion"
         }
         do {
             try viewContext.save()
